@@ -1,0 +1,16 @@
+bin/hadoop namenode -format
+./start-all.sh
+./stop-all.sh
+jps
+localhost:50070/dfshealth.html 
+
+libs
+
+
+    /usr/lib/hadoop-0.20/hadoop-core.jar
+
+    Usr/lib/hadoop-0.20/lib/Commons-cli-1.2.jar
+$ hadoop fs -put wordcountFile wordCountFile
+$ hadoop jar MRProgramsDemo.jar PackageDemo.WordCount wordCountFile MRDir1
+$ hadoop fs -ls MRDir1
+$ hadoop fs -cat MRDir1/part-r-00000
